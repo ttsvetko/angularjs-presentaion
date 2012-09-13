@@ -1,0 +1,66 @@
+/**\
+\**/
+
+body.full {
+	background: #585A5E url(../themes/ribbon/images/linen.png);
+}
+
+dt {
+	font-weight: bold;
+}
+
+dt ~ dd {
+	padding-left: 20px;
+	font-style: italic;
+}
+
+.font-color-google {
+	color: #db4a39;
+}
+
+.font-color-rrs {
+	color: #ff7700;
+}
+
+.slide section::before {
+	background: url('../images/AngularJS-small.png') no-repeat;
+	width: 240px;
+	top: 10px;
+}
+
+.cover header {
+	color: #999;
+}
+
+.slide .content {
+	height: 60%;
+}
+
+.overflow {
+	overflow: auto;
+	padding: 0 20px;
+	border-left: 7px solid #EEE;
+}
+
+.slide ol > li::before, .slide ul > li::before {
+}
+
+#cover section {
+	background: rgb(255, 255, 255);
+}
+
+#cover img {
+	width: 90%;
+	height: auto;
+	bottom: 10%;
+	top: auto;
+}
+
+#cover header {
+	text-align: center;
+}
+
+#introduction, #about-1 {
+	font-size: 80%;
+}
+

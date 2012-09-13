@@ -1,0 +1,26 @@
+body {
+	margin-top: 60px;
+}
+
+.navbar .brand {
+	color: white;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.search-query {
+	margin-right: 10px;
+}
+
+.action-bar {
+	display: -webkit-box;
+}
+
+.action-bar form {
+	-webkit-box-flex: 1;
+}
+
+.done-true {
+	color: gray;
+	text-decoration: line-through;
+}

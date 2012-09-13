@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Simple TODO</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<script src="js/angular.js"></script>
+    <script src="js/todo.js"></script>
+</head>
+<body ng-controller="TodoCtrl">
+	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<nav class="container">
+				<a href="" class="brand">Todos: {{todos.length}}</a>
+			</nav>
+			<form class="navbar-search pull-right" method="GET" action="https://www.google.com/search">
+	            <input type="text" name="a_q" class="search-query" placeholder="Search" ng-model="search">
+	          </form>
+		</div>
+	</header>
+	<section class="action-bar">
+		<form class="form-horizontal">
+			<input type="text" ng-model="newTodoText">
+			<button class="btn" ng-click="AddTodo()"><i class="icon-plus"></i>Add</button>
+		</form>
+
+		<button class="btn" ng-click="clear()"><i class="icon-trash"></i>Clear Completed</button>
+	</section>
+	<ul class="unstyled">
+		<li ng-repeat="todo in todos | filter:search">
+			<label class="done-{{todo.done}}">
+				<input type="checkbox" ng-model="todo.done"/>
+				{{todo.text}}
+			</label>
+		</li>
+	</ul>
+</body>
+</html>
